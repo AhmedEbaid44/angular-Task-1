@@ -1,0 +1,29 @@
+<section class="portfolio py-5">
+  <h1 class="text-center fw-bold">PORTFOLIO COMPONENT</h1>
+  <div class="icon text-center">
+    <span class="star">
+      <i _ngcontent-cvp-c6="" class="fa-solid fa-star text-black"></i>
+    </span>
+  </div>
+  <div class="container py-3">
+    <div class="row g-4">
+      @for (imagesrc of images; track $index) {
+        <div class="col-md-4">
+          <div class="inner">
+            <div class="image">
+              <img [src]="imagesrc" class="w-100" alt="" #image />
+            </div>
+            <div class="layer w-100" (click)="showimg(imagesrc)">
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+<div class="layout d-none" (click)="closeLayout()" #layoutt>
+  <div class="img-lay w-25">
+    <img [src]="imageSrc" class="w-100" alt="" />
+  </div>
+</div>

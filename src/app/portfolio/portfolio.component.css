@@ -1,0 +1,62 @@
+.portfolio{
+  /* min-height: 85vh ; */
+  margin-top: 85px;
+
+}
+.inner{
+  position: relative;
+  cursor: pointer;
+}
+img{
+  border-radius: 15px;
+}
+.layer{
+  height: 100%;
+  background-color: #1abc9ce6 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.inner:hover .layer{
+  opacity: 1;
+}
+.layout{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(124, 212, 212, 0.644);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star{
+  position: relative;
+}
+.star::after{
+  content: "";
+  width: 80px ;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 12px;
+  right: 40px;
+}
+.star::before{
+  content: "";
+  width: 80px ;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 12px;
+  left: 40px;
+}
+
+
+

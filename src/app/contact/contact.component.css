@@ -1,0 +1,32 @@
+.contact{
+  margin-top: 85px;
+  min-height: 85vh;
+}
+.star{
+  position: relative;
+}
+.star::after{
+  content: "";
+  width: 80px ;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 12px;
+  right: 40px;
+}
+.star::before{
+  content: "";
+  width: 80px ;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 12px;
+  left: 40px;
+}
+.inputs input{
+  border: none !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.336) !important;
+  outline: none;
+}
+
+
